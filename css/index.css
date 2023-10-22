@@ -1,0 +1,254 @@
+:root {
+	--azul-negro: #1a1e30;
+	--azul-escuro: #384269;
+	--azul-medio: #8088a7;
+	--azul-claro: #cad8f1;
+	--verde: #78e282;
+	--rosa: #ff5480;
+	--amarelo: #f6bb42;
+	--cinza: #ebebeb;
+}
+/* Configurações mais gerais */
+
+* {
+	font-family: "Montserrat";
+}
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.formatacao {
+	margin: 2vh 5vw;
+}
+
+.titulo {
+	text-align: center;
+	font-size: 2.5em;
+	color: var(--azul-claro);
+}
+
+.titulo2 {
+	text-align: center;
+	font-size: 2.5em;
+	color: var(--azul-escuro);
+}
+
+header {
+	margin: 0;
+
+	background-image: url(../assets/header-sdn.jpeg);
+	background-size: 100vw;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	text-align: center;
+
+	height: 100vh;
+}
+
+h3 {
+	text-transform: uppercase;
+}
+
+/* navbar */
+nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 5vh;
+}
+
+#sdn {
+	font-family: "Ubuntu", sans-serif;
+	font-size: 3em;
+}
+
+.botao-nav {
+	padding: 0vh 2vw;
+	font-family: "Ubuntu", sans-serif;
+	font-weight: bolder;
+	font-size: 1em;
+	color: var(--cinza);
+}
+
+.inicio {
+	height: 89vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#slogan {
+	font-family: "Ubuntu", sans-serif;
+	font-size: 3.5em;
+	text-shadow: 4px 4px var(--azul-negro);
+}
+
+#dados-ufrj,
+#dados-redes {
+	margin: 4vh 22vw;
+
+	font-weight: 500;
+	font-size: 1.2em;
+}
+
+#dados-redes {
+	text-shadow: 1.5px 1.5px var(--azul-negro);
+	background-color: rgba(0, 0, 0, 0.45);
+}
+
+#dados-redes span {
+	color: var(--azul-escuro);
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Sessões */
+section {
+	width: 98.75vw;
+}
+
+#autoria {
+	margin: 0 5vw;
+	padding: 2vh 0;
+	width: fit-content;
+}
+
+.autoria {
+	font-size: 0.8rem;
+}
+
+/* Sobre o app */
+.sobre {
+	margin: 7vh 5vw;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.texto {
+	text-align: start;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 5vh;
+}
+
+.imagem {
+	margin-bottom: 5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}
+
+.espaco {
+	padding: 0vh 5vw;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 2em;
+	color: var(--amarelo);
+}
+
+p {
+	font-size: 2.5vh;
+	color: var(--azul-negro);
+	text-align: start;
+	text-indent: 4rem;
+}
+
+.no-indent {
+	text-indent: 0;
+	font-size: 0.9rem;
+}
+
+strong {
+	font-weight: bolder;
+}
+
+.imagens-sobre {
+	height: 30vh;
+}
+
+.cinza {
+	margin-bottom: 0vh;
+	height: fit-content;
+	padding: 5vh 0;
+}
+
+.referencia {
+	font-size: 0.9rem;
+	text-indent: 0;
+}
+
+#perguntas {
+	text-align: justify;
+}
+.perguntas {
+	margin-top: 0vh;
+}
+
+.pergunta h4 {
+	font-size: 1.2rem;
+	color: var(--rosa);
+	margin: 2rem 0 0.5rem;
+}
+
+.pergunta p {
+	margin: 0;
+}
+
+/* Seção footer */
+footer {
+	background-color: var(--azul-medio);
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.info {
+	color: white;
+	font-weight: 300;
+}
+
+#autor {
+	color: var(--azul-negro);
+	text-align: end;
+	font-size: 0.9rem;
+}
+
+.ufrj-footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.logo-footer {
+	width: 13vw;
+}
+
+#copyright {
+	color: var(--azul-negro);
+
+	font-size: 1.5vh;
+	margin: 0;
+	font-weight: 600;
+	text-align: start;
+	text-indent: 0;
+}

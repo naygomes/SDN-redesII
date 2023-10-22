@@ -1,0 +1,110 @@
+:root {
+	--azul-negro: #1a1e30;
+	--azul-escuro: #384269;
+	--azul-medio: #8088a7;
+	--azul-claro: #cad8f1;
+	--verde: #78e282;
+	--rosa: #ff5480;
+	--amarelo: #f6bb42;
+	--cinza: #ebebeb;
+}
+
+@media (max-width: 1200px) {
+	/* Header do site */
+	header {
+		background-color: var(--azul-claro);
+		background-size: cover;
+		display: flex;
+	}
+
+	.inicio {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	#section {
+		height: 100vh;
+	}
+
+	#titulo {
+		margin-top: 10vh;
+	}
+
+	#slogan {
+		margin: 10vh 5vw 5vh;
+		font-size: 2.5em;
+	}
+
+	#frase-de-efeito {
+		margin: 0vh 5vw 5vh;
+		font-size: 1em;
+	}
+	/* Seção sobre */
+	.sobre {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	.imagens-sobre {
+		height: 20vh;
+	}
+
+	#sobre2 {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	/* Seção download */
+	#download {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	.botao-baixar {
+		font-size: 1em;
+	}
+
+	#botao-baixar {
+		margin-top: 10%;
+		align-self: center;
+	}
+
+	.download {
+		margin-bottom: 5vh;
+
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#ios,
+	#android {
+		margin: 2vh 0vw;
+	}
+
+	.mockup {
+		width: 100%;
+		margin-top: 5vh;
+	}
+
+	#form {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	#atendente {
+		margin-right: 0vw;
+	}
+
+	#enviar {
+		height: 5vh;
+		width: 20vw;
+	}
+	/* footer */
+	#autora {
+		text-align: left;
+		margin-left: 2vw;
+	}
+}

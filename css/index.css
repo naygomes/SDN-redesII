@@ -21,7 +21,7 @@ body {
 }
 
 .formatacao {
-	margin: 2vh 5vw;
+	margin: 2vh 4vw;
 }
 
 .titulo {
@@ -56,9 +56,10 @@ h3 {
 /* navbar */
 nav {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 	height: 5vh;
+	width: 100%;
 }
 
 #sdn {
@@ -67,7 +68,7 @@ nav {
 }
 
 .botao-nav {
-	padding: 0vh 2vw;
+	padding: 0vh 1.5vw;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: bolder;
 	font-size: 1em;
@@ -136,7 +137,7 @@ section {
 .texto {
 	text-align: start;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	margin-bottom: 5vh;
 }
@@ -144,6 +145,7 @@ section {
 .imagem {
 	margin-bottom: 5vh;
 	display: flex;
+	height: 60vh;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -163,11 +165,22 @@ h3 {
 	color: var(--amarelo);
 }
 
+.subtitulo {
+	color: var(--rosa);
+	font-size: 1.2rem;
+	text-indent: 4rem;
+}
+
 p {
 	font-size: 2.5vh;
 	color: var(--azul-negro);
 	text-align: start;
 	text-indent: 4rem;
+	margin: 0.5rem 0;
+}
+
+li {
+	padding: 0.5rem 0;
 }
 
 .no-indent {
@@ -177,10 +190,6 @@ p {
 
 strong {
 	font-weight: bolder;
-}
-
-.imagens-sobre {
-	height: 30vh;
 }
 
 .cinza {

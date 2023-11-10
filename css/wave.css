@@ -3,7 +3,7 @@
 		position: relative;
 		width: 100%;
 		height: fit-content;
-		padding: 0 0 18vh;
+		padding: 8vh 0 18vh;
 		background: white;
 		overflow: hidden;
 		align-items: flex-start;
@@ -22,7 +22,7 @@
 		position: relative;
 		width: 100%;
 		height: fit-content;
-		padding: 0 0 18vh;
+		padding: 8vh 0 18vh;
 		background: #ebebeb;
 		overflow: hidden;
 		align-items: flex-start;

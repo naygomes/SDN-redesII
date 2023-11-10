@@ -127,6 +127,7 @@ nav {
 
 a {
 	text-decoration: none;
+	color: var(--rosa);
 }
 
 /* Sessões */
@@ -135,8 +136,7 @@ section {
 }
 
 #autoria {
-	margin: 0 5vw;
-	padding: 2vh 0;
+	padding: 2vh 5vw;
 	width: fit-content;
 }
 
@@ -161,11 +161,16 @@ section {
 	margin-bottom: 5vh;
 }
 
-.imagem {
-	margin-top: 5vh;
-	margin-bottom: 5vh;
+.imagem-container {
 	display: flex;
-	height: 60vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagem {
+	height: 25rem;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -176,7 +181,7 @@ section {
 }
 
 .espaco {
-	padding: 0vh 5vw;
+	padding: 5vh 5vw 0vh;
 }
 
 h3 {
@@ -222,6 +227,7 @@ strong {
 .referencia {
 	font-size: 0.9rem;
 	text-indent: 0;
+	margin-bottom: 2vh;
 }
 
 #perguntas {

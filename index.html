@@ -35,7 +35,6 @@
 						<a id="arq-botao" class="botao-nav" href="#arquitetura"
 							>ARQUITETURA</a
 						>
-						<a id="tipos-botao" class="botao-nav" href="#tipos">TIPOS</a>
 						<a id="ferr-botao" class="botao-nav" href="#ferramentas"
 							>FERRAMENTAS</a
 						>
@@ -45,6 +44,9 @@
 						<a id="seg-botao" class="botao-nav" href="#seguranca">SEGURANÇA</a>
 						<a id="concl-botao" class="botao-nav" href="#conclusao"
 							>CONCLUSÃO</a
+						>
+						<a id="concl-botao" class="botao-nav" href="#bibliografia"
+							>REFERÊNCIAS</a
 						>
 					</div>
 				</nav>
@@ -64,7 +66,6 @@
 
 		<!-- Conteúdo -->
 
-		<!--Pronto-->
 		<section id="intro">
 			<div class="formatacao">
 				<h3><strong>INTRODUÇÃO</strong></h3>
@@ -116,7 +117,6 @@
 			</div>
 		</section>
 
-		<!--Pronto-->
 		<section id="conceitos" class="cinza">
 			<div class="formatacao">
 				<h3><strong>CONCEITOS</strong></h3>
@@ -207,7 +207,6 @@
 			<div class="wave wave4"></div>
 		</section>
 
-		<!--Pronto-->
 		<section id="arquitetura">
 			<div class="formatacao">
 				<h3><strong>ARQUITETURA</strong></h3>
@@ -222,6 +221,14 @@
 						enquanto o encaminhamento de pacotes de dados é realizado pelos
 						dispositivos de infraestrutura (dados).
 					</p>
+				</div>
+				<div class="imagem-container">
+					<img class="imagem espaco" src="./assets/arquitetura.png" alt="" />
+					<p class="no-indent">
+						<strong>Figura 1: </strong>Arquitetura SDN - imagem retirada de
+					</p>
+				</div>
+				<div class="texto">
 					<h4 class="subtitulo"><strong>Camada de Aplicação</strong></h4>
 					<p>
 						A camada de aplicação é responsável por fornecer serviços aos
@@ -364,15 +371,6 @@
 						</li>
 					</ul>
 				</div>
-
-				<!-- <div class="imagem">
-					<img
-						class="imagens-sobre espaco"
-						src="./assets/header-sdn.jpeg"
-						alt=""
-					/>
-					<p class="no-indent"><strong>Figura 1: </strong>legenda da imagem</p>
-				</div> -->
 			</div>
 
 			<div id="waves">
@@ -383,22 +381,256 @@
 			</div>
 		</section>
 
-		<section id="tipos" class="cinza">
-			<div class="formatacao">
-				<h3><strong>TIPOS</strong></h3>
-				Em breve...
-			</div>
-
-			<div class="wave wave1"></div>
-			<div class="wave wave2"></div>
-			<div class="wave wave3"></div>
-			<div class="wave wave4"></div>
-		</section>
-
-		<section id="ferramentas">
+		<section id="ferramentas" class="cinza">
 			<div class="formatacao">
 				<h3><strong>FERRAMENTAS</strong></h3>
-				Em breve...
+				<div class="texto">
+					<h4 class="subtitulo">
+						<strong>Controladores</strong>
+					</h4>
+					<ul>
+						<li>
+							<b>NOX</b>
+						</li>
+					</ul>
+					<p>
+						NOX foi o primeiro controlador <i>OpenFlow</i> criado, ele foi
+						escrito em C++ e também fornece uma API para <i>Python</i>. Ele
+						serviu de base para várias pesquisas e desenvolvimento de projetos
+						no começo do conjunto <i>OpenFlow</i> e SDN.
+					</p>
+					<p>
+						Ele possui duas linhas de desenvolvimento, o <i>NOX-Classic</i> e o
+						<i>"new NOX"</i>. O primeiro apresenta suporte para as linguagens
+						<i>Python</i> e C++ e possui diversas aplicações em redes, enquanto
+						o segundo apresenta suporte apenas para C++ e apesar de ter menos
+						aplicações em redes comparado ao <i>NOX-Classic</i> ele é muito mais
+						rápido e apresenta uma linha de código mais limpa.
+					</p>
+					<p>
+						POX é uma versão do NOX que suporta apenas a linguagem
+						<i>Python</i>, seu objetivo primário é o foco em pesquisas, pode ser
+						considerado um controlador <i>OpenFlow</i> genérico de código aberto
+						escrito em <i>Python</i>, sendo uma plataforma para rápido
+						desenvolvimento de pesquisas na área de redes.
+					</p>
+					<ul>
+						<li>
+							<b>Beacon</b>
+						</li>
+					</ul>
+					<p>
+						Beacon é um controlador de código aberto que está em desenvolvimento
+						desde 2010. Ele é um controlador rápido, multiplataforma, baseado em
+						Java que suporta operações baseadas em eventos ou <i>threads</i>.
+					</p>
+					<ul>
+						<li>
+							<b>FloodLight</b>
+						</li>
+					</ul>
+					<p>
+						<i>FloodLight</i> é também um controlador <i>OpenFlow</i> de código
+						aberto baseado em Java. Ele é um dos controladores mais populares
+						utilizados em SDN inclusive obtendo suporte de uma grande comunidade
+						de desenvolvedores, incluindo engenheiros de <i>software</i> de
+						grandes empresas.
+					</p>
+					<ul>
+						<li>
+							<b>Open DayLight</b>
+						</li>
+					</ul>
+					<p>
+						O controlador <i>OpenDaylight</i> é um controlador com base em Java
+						implementado somente em <i>software</i> e mantido em sua própria
+						máquina virtual Java, com isso é possível ser implementado em
+						<i>hardwares</i> e plataformas com suporte Java. Ele é um
+						controlador modular multi-protocolo desenvolvido para a implantação
+						de SDN em redes modernas heterogêneas de diversos fornecedores.
+					</p>
+					<ul>
+						<li>
+							<b>ONOS</b>
+						</li>
+					</ul>
+					<p>
+						<i>Open Network Operating System</i>, sigla ONOS, é um controlador
+						SDN de código aberto que permite usabilidade em larga escala com um
+						alto desempenho. ONOS suporta tanto configuração quanto controle em
+						tempo real de uma rede, fornecendo seu próprio conjunto de
+						abstrações e modelos de alto nível, com isso ele dispensa a
+						necessidade de fazer um roteamento ou protocolos de controle através
+						do comutador.
+					</p>
+
+					<h4 class="subtitulo">
+						<strong>Open vSwitch</strong>
+					</h4>
+					<p>
+						<i>Open vSwitch</i> é um comutador virtual com código aberto que
+						implementa o protocolo <i>OverFlow</i>. Ao simular comutadores em
+						ambientes virtuais, ele permite a comunicação de máquinas virtuais
+						entre si ou com uma rede física. Como podemos ver na imagem a
+						seguir, ele pode realizar a comunicação de múltiplas máquinas
+						virtuais a um <i>host</i> físico, o caminho seguinte ao
+						<i>Open vSwitch</i> é projetado para descarregar o processamento de
+						pacotes para <i>hardwares</i> físicos, que podem estar alojados no
+						comutador de um <i>hardware</i> clássico ou no terminal de um NIC
+						(do inglês, <i>Network Interface Card</i>). Como também podemos ver
+						na imagem abaixo, o <i>Open vSwitch</i> fornece ao usuário o
+						controle de diversos recursos de segurança, monitoramento e
+						qualidade de serviço (QoS).
+					</p>
+				</div>
+
+				<div class="imagem-container">
+					<img class="imagem espaco" src="./assets/openvswitch.png" alt="" />
+					<p class="no-indent">
+						<strong>Figura 2: </strong>Open vSwitch - imagem retirada do livro:
+						<i>Software Defined Networking</i> por Patricia A. Morreale e James
+						M. Anderson
+					</p>
+				</div>
+
+				<div class="texto">
+					<h4 class="subtitulo">
+						<strong>FlowVisor</strong>
+					</h4>
+
+					<p>
+						<i>FlowVisor</i> é um controlador <i>proxy</i> que pode ser
+						utilizado para adicionar uma camada de virtualização em uma rede
+						<i>OpenFlow</i>. Ele permite que múltiplos controladores controlem
+						simultaneamente grupos de comutadores sobrepostos.
+					</p>
+					<p>
+						Ele facilita a implementação de novos serviços em ambientes SDN além
+						de garantir um isolamento entre os controladores, fazendo com que
+						cada um seja responsável pelo seu pedaço de rede. Segue um exemplo
+						retirado do livro <i>Software Defined Networking</i> por Patricia A.
+						Morreale e James M. Anderson demonstrando como é sua atuação em uma
+						rede SDN.
+					</p>
+				</div>
+				<div class="imagem-container">
+					<img class="imagem espaco" src="./assets/flowvisor.png" alt="" />
+					<p class="no-indent">
+						<strong>Figura 3: </strong>FlowVisor - imagem retirada do livro:
+						<i>Software Defined Networking</i> por Patricia A. Morreale e James
+						M. Anderson
+					</p>
+				</div>
+
+				<div class="texto">
+					<h4 class="subtitulo">
+						<strong>RouteFlow</strong>
+					</h4>
+					<p>
+						<i>Routeflow</i> é um projeto de código aberto que oferece uma
+						virtualização do roteamento IP utilizando o protocolo
+						<i>OverFlow</i>. Ele é composto por uma aplicação do controlador
+						<i>OverFlow</i>, um servidor independente e um ambiente de rede
+						virtual que reproduz a conectividade de uma infraestrutura física e
+						executa mecanismos de roteamento IP. Os componentes principais do
+						<i>Routeflow</i> são o <i>Routeflow Client (RF-Client)</i> ,
+						<i>Routeflow Server</i> e <i>Routeflow Proxy (RF-Proxy)</i>, o
+						último também conhecido originalmente como
+						<i>RF-Controller (RF-C)</i>.
+					</p>
+
+					<p>
+						O objetivo principal do <i>RouteFlow</i> é desenvolver uma estrutura
+						de código aberto para soluções de um roteamento IP virtual
+						utilizando <i>hardwares</i> comuns que implementam um API
+						<i>OverFlow</i>, a imagem a seguir retirada do livro
+						<i>Software Defined Networking</i> por Patricia A. Morreale e James
+						M. Anderson exemplifica bem o funcionamento da aplicação
+						<i>RouteFlow</i> em uma SDN.
+					</p>
+				</div>
+				<div class="imagem-container">
+					<img class="imagem espaco" src="./assets/routeflow.png" alt="" />
+					<p class="no-indent">
+						<strong>Figura 4: </strong>RouteFlow - imagem retirada do livro:
+						<i>Software Defined Networking</i> por Patricia A. Morreale e James
+						M. Anderson
+					</p>
+				</div>
+				<div class="texto">
+					<h4 class="subtitulo">
+						<strong>OpenFlow</strong>
+					</h4>
+					<p>
+						Na arquitetura SDN, <i>Openflow</i> é a primeira interface de
+						comunicação entre o controlador e as camadas seguintes. Ele permite
+						acesso direto e manipulação dos dispositivos de redes como
+						comutadores e roteadores, tanto fisicamente quanto virtualmente. Com
+						isso ele garante que haja uma separação do plano de controle do
+						plano de dados em uma rede.
+					</p>
+				</div>
+				<div class="imagem-container">
+					<img class="imagem espaco" src="./assets/openFlow.png" alt="" />
+					<p class="no-indent">
+						<strong>Figura 5: </strong>OpenFlow - imagem retirada do livro:
+						<i>Software Defined Networking</i> por Patricia A. Morreale e James
+						M. Anderson
+					</p>
+				</div>
+				<div class="texto">
+					<ul>
+						<li>
+							<b>Comutador OpenFlow</b>
+						</li>
+					</ul>
+
+					<p>
+						Em um comutador <i>OpenFlow</i>, o cabeçalho de pacotes é comparado
+						a dados que estão armazenados na tabela de fluxo. Assim sendo, todo
+						comutador <i>OpenFlow</i> deve conter ao menos uma tabela de fluxo,
+						podendo possuir múltiplas tabelas. A entrada de cada tabela de fluxo
+						do comutador contém as seguintes três informações:
+					</p>
+					<ul>
+						<li>
+							Os dados que são usados para corresponder aos campos nos pacotes
+							recebidos;
+						</li>
+						<li>
+							Contadores usados para acompanhar o número de correspondências que
+							foram feitas até então;
+						</li>
+						<li>
+							Por fim, as instruções a serem executadas em caso de uma
+							correspondência bem sucedida.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<b>Protocolo OpenFlow</b>
+						</li>
+					</ul>
+					<p>
+						O comutador <i>Openflow</i> está conectado a um controlador externo
+						através de um canal <i>Openflow</i>. É através desta interface que o
+						controlador consegue configurar e administrar o comutador, recebe
+						eventos e envia pacotes para fora dele. Há três tipos de trocas de
+						mensagem entre o comutador e o controlador: controlador para
+						comutador, assíncrona e simétrica.
+					</p>
+					<p>
+						Mensagens do tipo <b>controlador</b> para comutador são usadas para
+						gerenciamento direto ou para inspecionar o estado do comutador e
+						elas são inicializadas pelo controlador, além disso, elas não
+						necessariamente precisam de uma resposta do comutador. As mensagens
+						<b>assíncronas</b> são usadas para atualizar o controlador com
+						eventos da rede e mudanças no estado do comutador, elas são
+						inicializadas pelo comutador. As mensagens <b>simétricas</b> são
+						enviadas sem que haja uma solicitação e podem ser inicializadas
+						tanto pelo controlador quanto pelo comutador.
+					</p>
+				</div>
 			</div>
 
 			<div id="waves">
@@ -409,7 +641,7 @@
 			</div>
 		</section>
 
-		<section id="aplicacoes" class="cinza">
+		<section id="aplicacoes">
 			<div class="formatacao">
 				<h3><strong>APLICAÇÕES</strong></h3>
 
@@ -473,10 +705,10 @@
 						ilustração abaixo, podemos comparar ambas arquiteturas.
 					</p>
 				</div>
-				<div class="imagem">
+				<div class="imagem-container">
 					<img class="imagem espaco" src="./assets/wan-vs-sdwan.png" alt="" />
 					<p class="no-indent">
-						<strong>Figura 2: </strong>WAN vs SD-WAN - imagem retirada de
+						<strong>Figura 6: </strong>WAN vs SD-WAN - imagem retirada de
 						<a
 							href="https://www.voipconsult.com.br/fortigate-sd-wan-fortinet/"
 							target="_blank"
@@ -554,8 +786,7 @@
 			<div class="wave wave4"></div>
 		</section>
 
-		<!--Pronto-->
-		<section id="seguranca">
+		<section id="seguranca" class="cinza">
 			<div class="formatacao">
 				<h3><strong>SEGURANÇA</strong></h3>
 
@@ -637,10 +868,10 @@
 
 					<p>A imagem abaixo ilustra um ataque de negação de serviço:</p>
 				</div>
-				<div class="imagem">
+				<div class="imagem-container">
 					<img class="imagem espaco" src="./assets/ataqueddos1.jpg" alt="" />
 					<p class="no-indent">
-						<strong>Figura 3: </strong>Ataque DDoS - imagem retirada de
+						<strong>Figura 7: </strong>Ataque DDoS - imagem retirada de
 						<a href="https://servermedia.com.br/blog/?p=849" target="_blank">
 							https://servermedia.com.br/blog/?p=849
 						</a>
@@ -691,7 +922,7 @@
 			</div>
 		</section>
 
-		<section id="conclusao" class="cinza">
+		<section id="conclusao">
 			<div class="formatacao">
 				<h3><strong>CONCLUSÃO</strong></h3>
 
@@ -720,13 +951,142 @@
 			<div class="wave wave4"></div>
 		</section>
 
-		<section id="bibliografia">
+		<section id="bibliografia" class="cinza">
 			<div class="formatacao">
-				<h2 class="titulo2">Bibliografia</h2>
-				Em breve...
+				<h2 class="titulo2">Referências</h2>
 				<!-- <div class="pergunta">
-					<p class="referencia">[1] Titulo. Autor. Ano.</p>
+					<p class="referencia">[1] Titulo. Autor. Ano. , acesso em: 05/10/2022</p>
+					Software Defined Networking por Patricia A. Morreale e James M. Anderson
 				</div> -->
+				<div>
+					<p class="referencia">
+						<b>[1]</b> MORREALE, Patricia A. e ANDERSON, James M.
+						<i>Software Defined Networking</i>. 2014. Acesso em: 17/10/2023
+					</p>
+
+					<p class="referencia">
+						<b>[2]</b> GORANSSON, Paul, BLACK, Chuck e CULVER, Timothy.
+						<i>Software Defined Networks: A Comprehensive Approach</i>. 2017.
+						Disponível em:
+						<a
+							href="https://books.google.com.br/books?hl=pt-BR&lr=&id=u01ODAAAQBAJ&oi=fnd&pg=PP1&dq
+						=software+defined+network+book&ots=XRESVBsb0w&sig=C49KuLVOvdjZNFcuUP55mML
+						3tK0#v=onepage&q=software%20defined%20network%20book&f=false"
+							target="_blank"
+							>https://books.google.com.br</a
+						>
+						. Acesso em: 17/10/2023
+					</p>
+
+					<p class="referencia">
+						<b>[3]</b> GUEDES, Dorgival, VIEIRA, Luiz Filipe Menezes, VIEIRA,
+						Marcos Menezes, RODRIGUES, Henrique e NUNES, Rogério Vinhal. Redes
+						Definidas por <i>Software</i>: uma abordagem sistêmica para o
+						desenvolvimento das pesquisas em Redes de Computadores. 2017.
+						Disponível em:
+						<a
+							href="https://homepages.dcc.ufmg.br/~mmvieira/cc/papers/minicurso-sdn.pdf"
+							target="_blank"
+							>https://homepages.dcc.ufmg.br</a
+						>
+						. Acesso em: 16/10/2023
+					</p>
+					<p class="referencia">
+						<b>[4]</b> Autor desconhecido. O que é SDN? Entenda o conceito de
+						<i>software defined network</i>. Disponível em:
+						<a
+							href="https://stefanini.com/pt-br/insights/artigos/entenda-o-conceito-de-software-defined-network"
+							target="_blank"
+						>
+							https://stefanini.com/
+						</a>
+						. Acesso em: 17/10/2023
+					</p>
+					<p class="referencia">
+						<b>[5]</b> Autor desconhecido.
+						<i>What is Software-Defined Networking (SDN)</i>. Disponível em:
+						<a
+							href="https://www.vmware.com/topics/glossary/content/software-defined-networking.html"
+							target="_blank"
+							>https://www.vmware.com</a
+						>
+						. Acesso em: 17/10/2023
+					</p>
+					<p class="referencia">
+						<b>[6]</b> Autor desconhecido. <i>Software-Defined Networking</i>.
+						Disponível em:
+						<a
+							href="https://www.cisco.com/c/en/us/solutions/software-defined-networking/overview.html"
+							target="_blank"
+							>https://www.cisco.com</a
+						>
+						. Acesso em: 17/10/2023
+					</p>
+					<p class="referencia">
+						<b>[7]</b> Peterson, Cascone, O'Connor, Vachuska, e Davie.
+						<i>Software-Defined Networks: A Systems Approach</i>. Disponível em:
+						<a href="https://sdn.systemsapproach.org" target="_blank">
+							https://sdn.systemsapproach.org
+						</a>
+						. Acesso em: 19/10/2023
+					</p>
+					<p class="referencia">
+						<b>[8]</b> Autor desconhecido.
+						<i>Software defined Networking(SDN)</i>. Disponível em:
+						<a
+							href="https://www.geeksforgeeks.org/software-defined-networking/amp/"
+							target="_blank"
+							>https://www.geeksforgeeks.org</a
+						>
+						. Acesso em: 19/10/2023
+					</p>
+					<p class="referencia">
+						<b>[9]</b> SOMA, Renato Yoshio e DE SOUZA, Wilson Rodolfo.
+						Introdução a SDN e <i>OpenFlow</i>. Disponível em:
+						<a
+							href="https://www.ic.unicamp.br/~edmundo/MC822/mc822/MO655/Introdução%20a%20SDN%20e
+							%20OpenFlow.pdf"
+							target="_blank"
+							>https://www.ic.unicamp.br</a
+						>
+						. Acesso em: 01/11/2023
+					</p>
+					<p class="referencia">
+						<b>[10]</b> Autor desconhecido.
+						<i>ONOS: Open Network Operating System</i>. Disponível em:
+						<a href="https://opennetworking.org/onos/" target="_blank"
+							>https://opennetworking.org</a
+						>
+						. Acesso em: 07/11/2023
+					</p>
+					<p class="referencia">
+						<b>[11]</b> Autor desconhecido.
+						<i>Software-Defined Local Area Network (SD-LAN)</i>. Disponível em:
+						<a href="https://opennetworking.org/onos/" target="_blank"
+							>https://opennetworking.org</a
+						>
+						. Acesso em: 07/11/2023
+					</p>
+					<p class="referencia">
+						<b>[12]</b> Autor desconhecido. O que é uma SD-WAN?. Disponível em:
+						<a
+							href="https://www.cloudflare.com/pt-br/learning/network-layer/what-is-an-sd-wan/"
+							target="_blank"
+							>https://www.cloudflare.com</a
+						>
+						. Acesso em: 08/11/2023
+					</p>
+					<p class="referencia">
+						<b>[13]</b> Autor Desconhecido. <i>Software-defined networking</i>.
+						Disponível em:
+						<a
+							href="https://en.wikipedia.org/wiki/Software-defined_networking"
+							target="_blank"
+							>https://en.wikipedia.org</a
+						>
+						. Acesso em: 08/11/2023
+					</p>
+				</div>
 			</div>
 			<div id="waves">
 				<div class="wave wave1"></div>
@@ -736,7 +1096,7 @@
 			</div>
 		</section>
 
-		<section id="perguntas" class="cinza">
+		<section id="perguntas">
 			<div class="perguntas formatacao">
 				<h2 class="titulo2">Perguntas</h2>
 
@@ -768,7 +1128,7 @@
 			<div class="wave wave4"></div>
 		</section>
 
-		<section id="autoria">
+		<section id="autoria" class="cinza">
 			<h2 class="titulo2">Declaração de autoria</h2>
 
 			<p class="autoria">
@@ -788,6 +1148,7 @@
 				aluno(s) à suspensão;"
 			</p>
 		</section>
+
 		<!-- Footer do Site -->
 		<footer>
 			<div class="formatacao footer">

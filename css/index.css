@@ -86,10 +86,10 @@ nav {
 }
 
 .botao-nav {
-	padding: 0vh 1.5vw;
+	padding: 0vh 1.2vw;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: bolder;
-	font-size: 1em;
+	font-size: 0.9em;
 	color: var(--cinza);
 	text-shadow: 1px 1px 2px #06213f;
 }

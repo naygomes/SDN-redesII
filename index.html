@@ -64,6 +64,7 @@
 
 		<!-- Conteúdo -->
 
+		<!--Pronto-->
 		<section id="intro">
 			<div class="formatacao">
 				<h3><strong>INTRODUÇÃO</strong></h3>
@@ -88,15 +89,16 @@
 					</p>
 					<p>
 						Para superar esses desafios, surgiu um novo paradigma de redes
-						chamado Redes Definidas por Software (SDN). Em uma SDN, o plano de
-						controle da rede é separado do plano de encaminhamento e construído
-						como um sistema distribuído. Isso permite que a rede seja gerenciada
-						de forma mais flexível e eficiente. O surgimento das SDNs está
-						diretamente ligado ao desenvolvimento do protocolo OpenFlow. O
-						OpenFlow é um protocolo que permite que aplicativos externos
-						controlem o fluxo de dados em switches de rede. Com o OpenFlow, os
-						switches de rede passam a ser "programáveis", o que abre um mundo de
-						possibilidades para o gerenciamento de redes.
+						chamado <b>Redes Definidas por <i>Software</i></b> (SDN). Em uma
+						SDN, o plano de controle da rede é separado do plano de
+						encaminhamento e construído como um sistema distribuído. Isso
+						permite que a rede seja gerenciada de forma mais flexível e
+						eficiente. O surgimento das SDNs está diretamente ligado ao
+						desenvolvimento do protocolo <i>OpenFlow</i>. O <i>OpenFlow</i> é um
+						protocolo que permite que aplicativos externos controlem o fluxo de
+						dados em <i>switches</i> de rede. Com o <i>OpenFlow</i>, os
+						<i>switches</i> de rede passam a ser "programáveis", o que abre um
+						mundo de possibilidades para o gerenciamento de redes.
 					</p>
 					<p>
 						As SDNs são uma tecnologia promissora que tem o potencial de
@@ -114,6 +116,7 @@
 			</div>
 		</section>
 
+		<!--Pronto-->
 		<section id="conceitos" class="cinza">
 			<div class="formatacao">
 				<h3><strong>CONCEITOS</strong></h3>
@@ -122,27 +125,27 @@
 					<h4 class="subtitulo"><strong>O que é?</strong></h4>
 
 					<p>
-						SDN, ou Redes Definidas por Software, é um novo paradigma de redes
-						que separa o plano de controle do plano de encaminhamento. No modelo
-						tradicional de redes, o plano de controle e o plano de
-						encaminhamento estão integrados em um único dispositivo, o roteador.
-						Isso torna difícil gerenciar e adaptar a rede às mudanças nas
-						demandas de tráfego.
+						SDN é um novo paradigma de redes que separa o plano de controle do
+						plano de encaminhamento. No modelo tradicional de redes, o plano de
+						controle e o plano de encaminhamento estão integrados em um único
+						dispositivo: o roteador. Isso torna difícil gerenciar e adaptar a
+						rede às mudanças nas demandas de tráfego.
 					</p>
 					<p>
 						Em uma SDN, o plano de controle é executado em um controlador SDN,
-						que é um software que gerencia a rede de forma centralizada. O plano
-						de encaminhamento é executado em switches de rede, que são
-						dispositivos que encaminham os pacotes de dados de acordo com as
-						instruções do controlador SDN.
+						que é um <i>software</i> que gerencia a rede de forma centralizada.
+						O plano de encaminhamento é executado em <i>switches</i> de rede,
+						que são dispositivos que encaminham os pacotes de dados de acordo
+						com as instruções do controlador SDN.
 					</p>
 					<h4 class="subtitulo"><strong>Como funciona?</strong></h4>
 
 					<p>
 						O controlador SDN usa um protocolo de comunicação para enviar
-						instruções aos switches de rede. O protocolo mais comumente usado é
-						o OpenFlow. O OpenFlow permite que o controlador SDN controle o
-						fluxo de dados em switches de rede programáveis.
+						instruções aos <i>switches</i> de rede. O protocolo mais comumente
+						usado é o <i>OpenFlow</i>. O <i>OpenFlow</i> permite que o
+						controlador SDN controle o fluxo de dados em <i>switches</i> de rede
+						programáveis.
 					</p>
 
 					<h4 class="subtitulo">
@@ -152,8 +155,9 @@
 					<p>
 						As redes tradicionais foram projetadas para atender às necessidades
 						de uma época em que a Internet era usada principalmente para
-						transferência de arquivos e e-mail. Com o aumento do tráfego de
-						dados, as redes tradicionais começaram a apresentar desafios, como:
+						transferência de arquivos e <i>e-mail</i>. Com o aumento do tráfego
+						de dados, as redes tradicionais começaram a apresentar desafios,
+						como:
 					</p>
 
 					<ul>
@@ -203,6 +207,7 @@
 			<div class="wave wave4"></div>
 		</section>
 
+		<!--Pronto-->
 		<section id="arquitetura">
 			<div class="formatacao">
 				<h3><strong>ARQUITETURA</strong></h3>
@@ -212,17 +217,18 @@
 						a separação da lógica de controle do encaminhamento de pacote de
 						dados. Nas redes tradicionais, a lógica de controle e o
 						encaminhamento de pacotes de dados estão localizados no mesmo
-						dispositivo, geralmente um roteador ou switch. Nas redes SDN, a
-						lógica de controle está localizada em um controlador separado,
+						dispositivo, geralmente um roteador ou <i>switch</i>. Nas redes SDN,
+						a lógica de controle está localizada em um controlador separado,
 						enquanto o encaminhamento de pacotes de dados é realizado pelos
 						dispositivos de infraestrutura (dados).
 					</p>
 					<h4 class="subtitulo"><strong>Camada de Aplicação</strong></h4>
 					<p>
 						A camada de aplicação é responsável por fornecer serviços aos
-						usuários da rede. Ela é o front-end da rede SDN e é responsável por
-						interagir com os usuários e gerenciar a rede. A camada de aplicação
-						pode ser implementada por meio de aplicações de software ou APIs.
+						usuários da rede. Ela é o <i>front-end</i> da rede SDN e é
+						responsável por interagir com os usuários e gerenciar a rede. A
+						camada de aplicação pode ser implementada por meio de aplicações de
+						<i>software</i> ou APIs (Interfaces de Programação de Aplicação).
 					</p>
 					<p>
 						Alguns exemplos de funções que podem ser implementadas na camada de
@@ -237,8 +243,8 @@
 						</li>
 						<li>
 							<b>Segurança:</b> A camada de aplicação pode ser usada para
-							melhorar a segurança da rede, por exemplo, implementando firewalls
-							ou sistemas de detecção de intrusão.
+							melhorar a segurança da rede, por exemplo, implementando
+							<i>firewalls</i> ou sistemas de detecção de intrusão.
 						</li>
 						<li>
 							<b>Gestão:</b> A camada de aplicação pode ser usada para
@@ -249,22 +255,23 @@
 					<h4 class="subtitulo"><strong>Camada de Controle</strong></h4>
 					<p>
 						A camada de controle é responsável por controlar e gerenciar toda a
-						rede. Ela é o back-end da rede SDN e é responsável por gerenciar a
-						topologia da rede e o estado dos dispositivos.
+						rede. Ela é o <i>back-end</i> da rede SDN e é responsável por
+						gerenciar a topologia da rede e o estado dos dispositivos.
 					</p>
 					<p>
 						A camada de controle recebe as solicitações da camada de aplicação e
 						envia instruções para os dispositivos de infraestrutura (dados).
 					</p>
 					<p>
-						A comunicação do controlador SDN com o switch é feita via API de
-						limite sul, como o OpenFlow.
+						A comunicação do controlador SDN com o <i>switch</i> é feita via API
+						de limite sul, como o <i>OpenFlow</i>.
 					</p>
 					<p>
 						A camada de controle também é responsável por executar alguns
-						protocolos de roteamento, como o OSPF e o BGP. Esses protocolos são
-						usados para determinar o caminho mais eficiente para o tráfego de
-						rede.
+						protocolos de roteamento, como o (do inglês,
+						<i>Open Shortest Path First</i>) e o BGP (do inglês,
+						<i>Border Gateway Protocol</i>). Esses protocolos são usados para
+						determinar o caminho mais eficiente para o tráfego de rede.
 					</p>
 					<p>
 						A fim de melhorar a disponibilidade e a escalabilidade dos recursos
@@ -283,12 +290,13 @@
 					<p>
 						A camada de infraestrutura (dados) é responsável por encaminhar os
 						pacotes de dados na rede. Ela é composta por dispositivos de rede,
-						como switches e roteadores.
+						como <i>switches</i> e roteadores.
 					</p>
 					<p>
-						Os switches são dispositivos simples que encaminham pacotes de rede
-						com base em regras armazenadas na tabela de encaminhamento. A tabela
-						de encaminhamento é composta por itens que possuem três campos:
+						Os <i>switches</i> são dispositivos simples que encaminham pacotes
+						de rede com base em regras armazenadas na tabela de encaminhamento.
+						A tabela de encaminhamento é composta por itens que possuem três
+						campos:
 					</p>
 					<ul>
 						<li>
@@ -305,16 +313,16 @@
 						</li>
 					</ul>
 					<p>
-						Quando um pacote de dados é recebido, o switch busca na sua tabela
-						de fluxo uma regra correspondente aos campos do cabeçalho. Se o
-						switch encontrar a regra certa, a ação é executada. Se o switch não
-						encontrar a regra, ele irá notificar o controlador ou descartar o
-						pacote.
+						Quando um pacote de dados é recebido, o <i>switch</i> busca na sua
+						tabela de fluxo uma regra correspondente aos campos do cabeçalho. Se
+						o <i>switch</i> encontrar a regra certa, a ação é executada. Se o
+						<i>switch</i> não encontrar a regra, ele irá notificar o controlador
+						ou descartar o pacote.
 					</p>
 					<p>
 						É importante ressaltar que os itens da regra de encaminhamento são
 						criados pelo controlador da camada de controle e enviados para o
-						switch.
+						<i>switch</i>.
 					</p>
 
 					<h4 class="subtitulo"><strong>Componentes</strong></h4>
@@ -326,8 +334,8 @@
 					</p>
 					<ul>
 						<li>
-							<b>Controladores:</b> AO controlador é a parte central da camada
-							de controle de uma SDN. Ele recebe informações dos aplicativos e
+							<b>Controladores:</b> O controlador é a parte central da camada de
+							controle de uma SDN. Ele recebe informações dos aplicativos e
 							políticas de rede da camada de aplicação e traduz essas políticas
 							em instruções compreensíveis pelos dispositivos de rede na camada
 							de infraestrutura. O controlador SDN também se comunica com a
@@ -335,24 +343,24 @@
 						</li>
 						<li>
 							<b>Dispositivos Programáveis :</b> Esses são os dispositivos
-							(normalmente switchs e roteadores) que recebem a informação do
-							controlador através da Southbound para montar seu plano de dados.
-							Após o recebimento das informações do controlador, as decisões do
-							que será feito com os pacotes já pode ser tomada. A capacidade de
-							programar e controlar esses dispositivos por meio de software é
-							uma das principais vantagens da SDN, tornando a rede mais ágil,
-							adaptável e eficiente;
+							(normalmente <i>switches</i> e roteadores) que recebem a
+							informação do controlador através da <i>Southbound</i> para montar
+							seu plano de dados. Após o recebimento das informações do
+							controlador, as decisões do que será feito com os pacotes já pode
+							ser tomada. A capacidade de programar e controlar esses
+							dispositivos por meio de <i>software</i> é uma das principais
+							vantagens da SDN, tornando a rede mais ágil, adaptável e
+							eficiente;
 						</li>
 						<li>
 							<b>Protocolos de Comunicação:</b> Os protocolos de comunicação
-							desempenham um papel essencial na rede definida por software (SDN)
-							ao permitir a comunicação entre os diferentes componentes da SDN,
-							como o controlador, os dispositivos de rede e os aplicativos.
-							Existem muitos protocolos e padrões relacionados que podem ser
-							utilizados em implementações de SDN, sendo o Openflow amplamente
-							utilizado. A escolha do protocolo depende das necessidades
-							específicas da implementação e da interoperabilidade com os
-							dispositivos de rede.
+							desempenham um papel essencial na SDN ao permitir a comunicação
+							entre os diferentes componentes da SDN, como o controlador, os
+							dispositivos de rede e os aplicativos. Existem muitos protocolos e
+							padrões relacionados que podem ser utilizados em implementações de
+							SDN, sendo o <i>Openflow</i> amplamente utilizado. A escolha do
+							protocolo depende das necessidades específicas da implementação e
+							da interoperabilidade com os dispositivos de rede.
 						</li>
 					</ul>
 				</div>
@@ -414,6 +422,7 @@
 			<div class="wave wave4"></div>
 		</section>
 
+		<!--Pronto-->
 		<section id="seguranca">
 			<div class="formatacao">
 				<h3><strong>SEGURANÇA</strong></h3>
@@ -423,22 +432,22 @@
 
 					<p>
 						À medida que a Internet foi se expandindo, novas soluções de
-						segurança foram criadas para proteger a camada de rede, como o
-						IPSec. No entanto, novas ameaças também surgiram, e a Internet ainda
-						apresenta problemas de segurança. Redes tradicionais, como a
-						Internet de hoje, são baseadas em software fechado sobre hardware
-						proprietário. Isso dificulta a implantação de novas soluções de
-						segurança, pois leva tempo para que o software da rede seja
-						atualizado.
+						segurança foram criadas para proteger a camada de rede, como o IPSec
+						(Protocolo de Segurança IP). No entanto, novas ameaças também
+						surgiram, e a Internet ainda apresenta problemas de segurança. Redes
+						tradicionais, como a Internet de hoje, são baseadas em software
+						fechado sobre <i>hardware</i> proprietário. Isso dificulta a
+						implantação de novas soluções de segurança, pois leva tempo para que
+						o <i>software</i> da rede seja atualizado.
 					</p>
 					<p>
-						As redes definidas por software (SDNs) eliminam essa limitação ao
-						separar os planos de dados e de controle. O controle, que é feito
-						por software, não depende mais de hardware proprietário e pode ser
-						atualizado imediatamente com novas soluções de segurança através da
-						interface programável aberta das SDNs. A segurança em redes
-						definidas por software (SDNs) apresenta desafios e oportunidades
-						únicos em relação às redes tradicionais.
+						As redes definidas por <i>software</i> (SDNs) eliminam essa
+						limitação ao separar os planos de dados e de controle. O controle,
+						que é feito por <i>software</i>, não depende mais de
+						<i>hardware</i> proprietário e pode ser atualizado imediatamente com
+						novas soluções de segurança através da interface programável aberta
+						das SDNs. A segurança em SDNs apresenta desafios e oportunidades
+						únicas em relação às redes tradicionais.
 					</p>
 					<h4 class="subtitulo"><strong>Vantagens</strong></h4>
 					<ul>
@@ -450,7 +459,7 @@
 						<li>
 							<b>Atuação rápida:</b> Novas soluções de segurança podem ser
 							implementadas rapidamente nas SDNs por meio de atualizações de
-							software.
+							<i>software</i>.
 						</li>
 					</ul>
 					<h4 class="subtitulo"><strong>Desvantagens</strong></h4>
@@ -488,9 +497,9 @@
 						controladas pelo atacante, são utilizadas para enviar os pacotes.
 					</p>
 					<p>
-						Com o OpenFlow habilitado, quando um pacote chega a um comutador e
-						este não sabe como lidar com ele, o pacote é encaminhado ao
-						controlador. Isso pode sobrecarregar o controlador, pois ele terá
+						Com o <i>OpenFlow</i> habilitado, quando um pacote chega a um
+						comutador e este não sabe como lidar com ele, o pacote é encaminhado
+						ao controlador. Isso pode sobrecarregar o controlador, pois ele terá
 						que lidar com uma quantidade enorme de pacotes.
 					</p>
 
@@ -509,18 +518,17 @@
 						<li><b>Acesso Ilegal</b></li>
 					</ul>
 					<p>
-						As redes definidas por software (SDN) são uma nova arquitetura de
-						rede que centraliza o controle da rede em um controlador. Isso
-						permite uma maior flexibilidade e controle, mas também apresenta
-						algumas vulnerabilidades de segurança. Uma das principais
-						vulnerabilidades das redes SDN é o acesso privilegiado das
-						aplicações que são executadas no controlador. Essas aplicações têm
-						acesso a todos os recursos e ao controle da rede, o que as torna um
-						alvo atraente para ataques. Outra vulnerabilidade é o fato de que a
-						maioria das aplicações SDN não são desenvolvidas pelos fabricantes
-						dos comutadores. Isso significa que não existe um mecanismo padrão
-						de segurança para essas aplicações, o que pode levar a
-						vulnerabilidades adicionais.
+						As SDNs são uma nova arquitetura de rede que centraliza o controle
+						da rede em um controlador. Isso permite uma maior flexibilidade e
+						controle, mas também apresenta algumas vulnerabilidades de
+						segurança. Uma das principais vulnerabilidades das redes SDN é o
+						acesso privilegiado das aplicações que são executadas no
+						controlador. Essas aplicações têm acesso a todos os recursos e ao
+						controle da rede, o que as torna um alvo atraente para ataques.
+						Outra vulnerabilidade é o fato de que a maioria das aplicações SDN
+						não são desenvolvidas pelos fabricantes dos comutadores. Isso
+						significa que não existe um mecanismo padrão de segurança para essas
+						aplicações, o que pode levar a vulnerabilidades adicionais.
 					</p>
 					<p>
 						Apesar dessas vulnerabilidades, existem diversas propostas de
